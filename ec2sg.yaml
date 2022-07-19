@@ -24,7 +24,7 @@ Resources:
         IpProtocol: tcp
         ToPort: 22
 
-  ServerSecurityGroup:
+ ServerSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: allow connections from specified CIDR ranges
