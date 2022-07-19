@@ -1,8 +1,9 @@
 Resources:
-  MyInstance:
+  MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      InstanceType: !Ref: InstanceTypeParameter
+      #we reference the InstanceType parameter
+      InstanceType: !Ref InstanceType
       ImageId: ami-0742b4e673072066f
       SecurityGroups:
         - !Ref SSHSecurityGroup
