@@ -3,7 +3,8 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       #we reference the InstanceType parameter
-      InstanceType: !Ref InstanceType
+      InstanceType: 
+      "Ref": "InstanceType"
       ImageId: ami-0742b4e673072066f
       SecurityGroups:
         - !Ref SSHSecurityGroup
