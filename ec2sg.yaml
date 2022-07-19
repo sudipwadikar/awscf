@@ -8,6 +8,7 @@ Resources:
       SecurityGroups:
         - !Ref SSHSecurityGroup
         - !Ref ServerSecurityGroup
+        
   MyEIP:
     Type: AWS::EC2::EIP
     Properties:
