@@ -2,7 +2,7 @@ Resources:
  MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      InstanceType: t2.micro
+      InstanceType: !Ref InstanceType
       KeyName: cfdemo
       ImageId: ami-0742b4e673072066f
       SecurityGroups:
