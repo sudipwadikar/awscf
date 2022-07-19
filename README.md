@@ -1,0 +1,2 @@
+# awscf
+AWS Cloudformation Automation
